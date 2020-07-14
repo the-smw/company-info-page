@@ -8,6 +8,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
   background-color: #F4F3F5;  
 }
 
@@ -19,7 +20,7 @@ main,container {
   width: 90%;
   height: 60vh;
   margin: 0 auto;
-  background-color: green;
+  background-color: #ffffff;
   border-radius: 15px;
   padding: 1.5rem;
   display: table;
@@ -52,21 +53,68 @@ h2, p{
 }
 
 
+
 /*====IMAGES====*/
-.logo {
+
+.logo, .map {
   display: block;
   margin: 0 auto;
+}
+
+.logo {
   padding: 1rem;
 }
 
-.map {
-  display: block;
-  margin: 0 auto;
+main .map {
   width: 100%;
+  border-radius: 15px;
+  margin-bottom: 2rem;
 }
 
 
 /*====TYPOGRAPHY====*/
+
+/* Top Navigation */
+
+nav li {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 2.5;
+  letter-spacing: .2rem;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #F4F3F5;
+}
+
+
+/* Contact card */
+
+h2, 
+.e-mail, .phone {
+  text-transform: uppercase;
+  color: #6200EA;
+  font-weight: 600;
+  letter-spacing: .2rem;
+}
+
+h2 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.2;
+  letter-spacing: .03rem;
+  margin-bottom: 1.5rem;
+}
+
+.phone {
+  margin-bottom: .5rem;
+}
 
 
 
@@ -81,16 +129,10 @@ nav ul {
 }
 
 nav li {
-  font-size: 1rem;
-  line-height: 2.5;
-  letter-spacing: .125rem;
   border-bottom: 1.5px solid #ffffff;
 }
 
 nav a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #F4F3F5;
   display: block;
 }
 
