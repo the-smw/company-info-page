@@ -1,0 +1,100 @@
+/*====BASE STYLES====*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F4F3F5;  
+}
+
+main,container {
+  width: 100vw;
+}
+
+.contact-card {
+  width: 90%;
+  height: 60vh;
+  margin: 0 auto;
+  background-color: green;
+  border-radius: 15px;
+  padding: 1.5rem;
+  display: table;
+}
+
+.wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+/* LAYOUT STYLES */
+
+/*Single-direction margin declaration*/
+
+header,
+main .map,
+h2, p{
+  margin-bottom: 1rem;
+}
+
+/*====HEADER STYLES====*/
+
+.title {
+  width: 100%;
+  background-color: #6200EA;
+  display: table;
+  border-bottom: 1.5px solid #ffffff;
+}
+
+
+/*====IMAGES====*/
+.logo {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.map {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+/*====TYPOGRAPHY====*/
+
+
+
+/*====COMPONENTS====*/
+
+/* Top Navigation */
+
+nav ul {
+  background-color: #6200EA;
+  opacity: .9;
+  text-align: center;
+}
+
+nav li {
+  font-size: 1rem;
+  line-height: 2.5;
+  letter-spacing: .125rem;
+  border-bottom: 1.5px solid #ffffff;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #F4F3F5;
+  display: block;
+}
+
+nav a:hover {
+  transform: scale(1.13);
+  color: #ffffff;
+}
