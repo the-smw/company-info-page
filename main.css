@@ -75,20 +75,12 @@ main {
     float: left;
     width: 48.5%;
     height: 80vh;
-    margin-top: 3rem;
+    margin-top: 1.2rem;
     padding: 3rem;
   }
   
   .info-card {
     margin-left: 3%;
-  }
-}
-
-/* Content Styles */
-
-@media (min-width: 1200px) {
-  h1 {
-    margin-top: -2.5rem;
   }
   
   .icons {
@@ -161,7 +153,7 @@ section li {
 }
 
 .msg-box {
-  height: 12rem;
+  height: 10rem;
   margin-bottom: 1.5rem
 }
 
