@@ -12,7 +12,7 @@ body {
   background-color: #F4F3F5;  
 }
 
-main,container {
+main {
   width: 100vw;
 }
 
@@ -33,12 +33,76 @@ main,container {
 
 
 
-/* LAYOUT STYLES */
+/*===MEDIA QUERIES===*/
+
+/* For NAVIGATION styles */
+
+@media (min-width: 1200px) {
+  nav {
+    font-size: 0;
+  }
+  
+  body nav li {
+    display: inline-block;
+    border-bottom: none;
+    width: 7.5rem;
+    height: 3.5rem;
+  }
+  
+  nav .logo-pic {
+    position: relative;
+    left: -21rem;
+  }
+  
+  nav a {
+    position: relative;
+    right: -20rem;
+    bottom: .3rem
+  }
+}
+
+/* Main section style */
+
+@media (min-width: 1200px) {
+  main {
+    width: 80%;
+    height: 70vh;
+    margin: 0 auto; 
+    padding: 1rem
+  }
+  
+  .contact-card, .info-card {
+    float: left;
+    width: 48.5%;
+    height: 80vh;
+    margin-top: 3rem;
+    padding: 3rem;
+  }
+  
+  .info-card {
+    margin-left: 3%;
+  }
+}
+
+/* Content Styles */
+
+@media (min-width: 1200px) {
+  h1 {
+    margin-top: -2.5rem;
+  }
+  
+  .icons {
+    text-align: left;
+  } 
+}
+
+
+/*====LAYOUT STYLES====*/
 
 /*Single-direction margin declaration*/
 
-header, figure,
-.contact-card, .name, .enter-mail, .msg-box, 
+nav, figure,
+.contact-card, .info-card, .name, .enter-mail, .msg-box, 
 h1, h2, p {
   margin-bottom: 1rem;
 }
@@ -49,6 +113,7 @@ figure {
   height: 0;
   padding-bottom: 56.25%;
   position: relative;
+  margin-bottom: 2.5rem;
 }
 
 figure iframe {
@@ -83,7 +148,7 @@ section ul {
 
 section li {
   display: inline;
-  padding: .5rem;
+  padding: .3rem;
 }
 
 
@@ -91,27 +156,17 @@ section li {
 
 .name, .enter-mail, .msg-box {
   background-color: #F4F3F5;
-  height: 3rem;
-  padding: 1rem;
+  height: 4rem;
+  padding: 1.5rem;
 }
 
 .msg-box {
-  height: 8rem;
+  height: 12rem;
+  margin-bottom: 1.5rem
 }
 
 .name {
   border-bottom: 3px solid #6200EA;
-}
-
-
-
-/*====HEADER STYLES====*/
-
-.title {
-  width: 100%;
-  background-color: #6200EA;
-  display: table;
-  border-bottom: 1.5px solid #ffffff;
 }
 
 
@@ -131,10 +186,9 @@ footer {
 
 .logo {
   display: block;
-  margin: 0 auto;
   padding: 1rem;
+  margin: 0 auto;
 }
-
 
 
 /*====TYPOGRAPHY====*/
@@ -191,6 +245,7 @@ h1, h3, .intro-text {
 h1 {
   font-size: 2.5rem;
   font-weight: 900;
+  padding-top: .5rem;
 }
 
 .intro-text {
@@ -212,6 +267,7 @@ footer {
   font-weight: 500;
   letter-spacing: .3rem;
   line-height: .9rem;
+  text-transform: uppercase;
 }
 
 /*====COMPONENTS====*/
@@ -220,7 +276,6 @@ footer {
 
 nav ul {
   background-color: #6200EA;
-  opacity: .9;
   text-align: center;
 }
 
@@ -236,6 +291,24 @@ nav a:hover {
   transform: scale(1.13);
   color: #ffffff;
 }
+
+
+/* Submit button */
+
+.submit {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: .8rem;
+  font-weight: 600;
+  line-height: 1.4rem;
+  padding: .8rem 1rem;
+  background-color: #6200EA;
+  color: #ffffff;
+  border-radius: 24px;
+  text-transform: uppercase;
+}
+
 
 /* Footer */
 
