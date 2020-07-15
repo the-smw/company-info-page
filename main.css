@@ -16,7 +16,7 @@ main,container {
   width: 100vw;
 }
 
-.contact-card {
+.contact-card, .info-card {
   width: 90%;
   height: 60vh;
   margin: 0 auto;
@@ -38,7 +38,8 @@ main,container {
 /*Single-direction margin declaration*/
 
 header, figure,
-h2, p {
+.contact-card, .name, .enter-mail, .msg-box, 
+h1, h2, p {
   margin-bottom: 1rem;
 }
 
@@ -83,6 +84,25 @@ section li {
   display: inline;
   padding: .5rem;
 }
+
+
+/* Info-card styles */
+
+.name, .enter-mail, .msg-box {
+  background-color: #F4F3F5;
+  height: 3rem;
+  padding: 1rem;
+}
+
+.msg-box {
+  height: 8rem;
+}
+
+.name {
+  border-bottom: 3px solid #6200EA;
+}
+
+
 
 /*====HEADER STYLES====*/
 
@@ -150,6 +170,21 @@ p {
 }
 
 
+/* Info-card */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+}
+
+h3, .tagline {
+  font-size: 1rem;
+  opacity: 0.25;
+  font-weight: 900;
+}
 
 /*====COMPONENTS====*/
 
