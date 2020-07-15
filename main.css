@@ -37,10 +37,51 @@ main,container {
 
 /*Single-direction margin declaration*/
 
-header,
-main .map,
-h2, p{
+header, figure,
+h2, p {
   margin-bottom: 1rem;
+}
+
+/* Map styles */
+
+figure {
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+figure iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Link section styles */
+
+i {
+  width: 4rem;
+  height: 4rem;
+  color: #ffffff;
+  background-color: #6200EA;
+  border: 1px solid #6200EA;
+  border-radius: 50%;
+  padding: 1rem;
+  text-align: center;
+}
+
+section {
+  text-align: center;
+}
+
+section ul {
+  list-style-type: none;
+}
+
+section li {
+  display: inline;
+  padding: .5rem;
 }
 
 /*====HEADER STYLES====*/
@@ -56,20 +97,12 @@ h2, p{
 
 /*====IMAGES====*/
 
-.logo, .map {
+.logo {
   display: block;
   margin: 0 auto;
-}
-
-.logo {
   padding: 1rem;
 }
 
-main .map {
-  width: 100%;
-  border-radius: 15px;
-  margin-bottom: 2rem;
-}
 
 
 /*====TYPOGRAPHY====*/
